@@ -11,12 +11,14 @@ function ProductDetails() {
   return (
       <div className='flex'>
           <div>
-              <img src={data?.image} alt="" />
+              <img src={data?.images[0]} alt={data?.title} className='w-64' />
           </div>
           <div>
               <h1>{data?.title}</h1>
+              <p>{data?.category.name}</p>
               <p>{data?.description}</p>
-              <p>{data?.price}</p>
+              <p className='text-lg text-indigo-500'>${data?.price}</p>
+
           </div>
           
     </div>

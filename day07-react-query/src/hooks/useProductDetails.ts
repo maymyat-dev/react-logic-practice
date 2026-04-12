@@ -6,6 +6,8 @@ const useProductDetails = (id: number) => {
     return useQuery<Product>({
       queryKey: ["product-details", id],
       queryFn: () => getProductById(id),
+      enabled: !!id,
+      placeholderData: (previousData) => previousData,
       staleTime: 1000 * 60 * 5,
         retry: 1,
       retryDelay: 5000,
