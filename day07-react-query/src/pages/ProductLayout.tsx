@@ -5,7 +5,7 @@ import "react-toastify/dist/ReactToastify.css";
 
 function ProductLayout() {
   return (
-    <div className='max-w-7xl mx-auto px-4'>
+    <div className='w-full'>
       <Outlet />
 
       <ToastContainer position="top-right" autoClose={3000} />

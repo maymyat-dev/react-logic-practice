@@ -12,17 +12,9 @@ export type Product = {
   images: string[];
 };
 
-export type searchParams = {
-  title?: string;
-  price?: number;
-  category?: number;
-  minPrice?: number;
-  maxPrice?: number;
-  search?: string;
-};
 export type Filters = {
-  search: string;
-  minPrice?: number;
-  maxPrice?: number;
-  category?: number;
-};
+    title: string;
+    minPrice: number;
+    maxPrice: number;
+    category: string;
+}
