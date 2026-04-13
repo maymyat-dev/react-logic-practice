@@ -30,7 +30,6 @@ function ProductList() {
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      {/* Header & Search Section */}
       <div className="flex flex-col md:flex-row md:items-center justify-between mb-10 gap-6">
         <div>
           <h1 className="text-3xl font-bold text-gray-900 tracking-tight">Our Products</h1>
@@ -57,7 +56,6 @@ function ProductList() {
                 />
               </div>
 
-              {/* Content */}
               <div className="p-5 flex flex-col flex-grow">
                 <h3 className="text-gray-900 font-semibold text-lg leading-snug group-hover:text-blue-600 transition-colors line-clamp-1">
                   {product.title}
